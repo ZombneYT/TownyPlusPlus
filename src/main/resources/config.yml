@@ -1,0 +1,50 @@
+# |''||''|
+#    ||      ...   ... ... ... .. ...   .... ...     ||          ||
+#    ||    .|  '|.  ||  ||  |   ||  ||   '|.  |      ||          ||
+#    ||    ||   ||   ||| |||    ||  ||    '|.|   ||||||||||  ||||||||||
+#   .||.    '|..|'    |   |    .||. ||.    '|        ||          ||
+#                                       .. |         ||          ||
+#                                        ''
+towny:
+  town:
+    t-ask:
+      cooldown: 120
+      message: """
+      
+      ✉ Игрок %player% желает присоединится к городу! %button%
+      
+      """
+      button: "[Принять в город]"
+    #This section is for players to create a town using resources.
+    t-new:
+      enable: 'true'
+      message: "§6[Towny] §cТребуется, 64 дубовых досок, 256 еловых досок, 512 булыжника, 16 железных слитков, 32 угля, 1 саженец дуба."
+      requirement:
+        - COAL, 32
+        - OAK_SAPLING, 1
+        - OAK_PLANKS, 64
+        - SPRUCE_PLANKS, 256
+        - COBBLESTONE, 512
+        - IRON_INGOT, 16
+    warsystem:
+      town:
+        flag:
+          #Maximum flags used
+          maximum: 1
+          #How many seconds after the capture of the chunk
+          time: 30
+          #Set up a counter destroying a chunks
+          breaks: 30
+          #Таймер захвата
+          counter: '§c{seconds} с'
+          # СЧЁТЧИК ЛОМАНИЙ
+          breaker: '§c[{current}/{max}]'
+          # ИТЕМ ФЛАГА
+          item:
+            material: 'RED_BANNER'
+            name: '&aФлаг захвата'
+            lore:
+              - '§aПозволяет захватывать территории при войне!'
+              - '§aМожет быть использован §cтолько§a на территории'
+              - '§aврага при войне!'
+      nation:

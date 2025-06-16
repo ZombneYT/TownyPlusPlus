@@ -1,0 +1,68 @@
+t-century:
+  enable: true
+  century1:
+    add-craft:
+
+    requirement:
+      - COAL, 32
+      - OAK_SAPLING, 1
+      - OAK_PLANKS, 64
+      - SPRUCE_PLANKS, 256
+      - COBBLESTONE, 512
+      - IRON_INGOT, 16
+  century2:
+    requirement:
+      - COAL, 32
+      - OAK_SAPLING, 1
+      - OAK_PLANKS, 64
+      - SPRUCE_PLANKS, 256
+      - COBBLESTONE, 512
+      - IRON_INGOT, 16
+  century3:
+    requirement:
+      - COAL, 32
+      - OAK_SAPLING, 1
+      - OAK_PLANKS, 64
+      - SPRUCE_PLANKS, 256
+      - COBBLESTONE, 512
+      - IRON_INGOT, 16
+  century4:
+    requirement:
+      - COAL, 32
+      - OAK_SAPLING, 1
+      - OAK_PLANKS, 64
+      - SPRUCE_PLANKS, 256
+      - COBBLESTONE, 512
+      - IRON_INGOT, 16
+  century5:
+    requirement:
+      - COAL, 32
+      - OAK_SAPLING, 1
+      - OAK_PLANKS, 64
+      - SPRUCE_PLANKS, 256
+      - COBBLESTONE, 512
+      - IRON_INGOT, 16
+  century6:
+    requirement:
+      - COAL, 32
+      - OAK_SAPLING, 1
+      - OAK_PLANKS, 64
+      - SPRUCE_PLANKS, 256
+      - COBBLESTONE, 512
+      - IRON_INGOT, 16
+  century7:
+    requirement:
+      - COAL, 32
+      - OAK_SAPLING, 1
+      - OAK_PLANKS, 64
+      - SPRUCE_PLANKS, 256
+      - COBBLESTONE, 512
+      - IRON_INGOT, 16
+  century8:
+    requirement:
+      - COAL, 32
+      - OAK_SAPLING, 1
+      - OAK_PLANKS, 64
+      - SPRUCE_PLANKS, 256
+      - COBBLESTONE, 512
+      - IRON_INGOT, 16
