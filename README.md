@@ -10,7 +10,7 @@ The [TownyPlusPlus](https://github.com/ZombneYT/TownyPlusPlus) adds an addition 
 - town wonders
 - town century
 - town pact
-
+(The same thing will happen for the nation)
 **The plugin was developed by [Vodomer](https://github.com/ZombneYT) and Witux**(witux did not create a github account).
 Currently, this plugin is under active development, we are currently unable to provide a version of the plugin, so stay tuned on our discord [server](https://discord.gg/polithill).
 
