@@ -1,0 +1,140 @@
+1. Как сделать первый билдс?
+билды делают через groupsender-tbuilds.yml при написании можете придумать свой уникальное здание!
+groupsender:
+  group1:
+    '0':
+      groupname: "Казарма [I]"
+      requirement:
+        - MONEY 10
+        - OAK_LOG 100
+        - STONE 100
+
+groupsender с него начинаешь первое здание, также надо указать рабочее название, я указал group1.
+
+есть у группы функция requirement она содержит список предметов которых нужно поместить в инвентарь, либо же количество монет используя MONEY.
+группы можете поделить на несколько стадий, это можете сделать таким образом
+groupsender:
+  group1:
+    '0':
+      groupname: "Казарма [I]"
+      requirement:
+        - MONEY 10
+        - OAK_LOG 100
+        - STONE 100
+    '1':
+      groupname: "Казарма [II]"
+      requirement:
+        - MONEY 10
+        - OAK_LOG 100
+        - STONE 100
+    '2':
+      groupname: "Казарма [III]"
+      requirement:
+        - MONEY 10
+        - OAK_LOG 100
+        - STONE 100
+    '3':
+      groupname: "Казарма [IV]"
+      requirement:
+        - MONEY 10
+        - OAK_LOG 100
+        - STONE 100
+    '4':
+      groupname: "Казарма [V]"
+      requirement:
+        - MONEY 10
+        - OAK_LOG 100
+        - STONE 100
+при каждой прокачке используюется название (groupname) группы и в скобках на какой стадии чтобы реализовать на демонстрации сил городов.
+чтобы каждым стадиям дать характерный баф после утраты ресурсов используем if-completed
+groupsender:
+  group1:
+    '0':
+      groupname: "Казарма [I]"
+      requirement:
+        - MONEY 10
+        - OAK_LOG 100
+        - STONE 100
+      if-completed:
+        give-effect: WATER_BREATHING 10 1
+    '1':
+      groupname: "Казарма [II]"
+      requirement:
+        - MONEY 10
+        - OAK_LOG 100
+        - STONE 100
+      if-completed:
+        give-effect: SPEED 10 1
+    '2':
+      groupname: "Казарма [III]"
+      requirement:
+        - MONEY 10
+        - OAK_LOG 100
+        - STONE 100
+      if-completed:
+        give-effect: FAST_DIGGING 10 1
+    '3':
+      groupname: "Казарма [IV]"
+      requirement:
+        - MONEY 10
+        - OAK_LOG 100
+        - STONE 100
+      if-completed:
+        give-effect: FIRE_RESISTANCE 10 1
+    '4':
+      groupname: "Казарма [V]"
+      requirement:
+        - MONEY 10
+        - OAK_LOG 100
+        - STONE 100
+      if-completed:
+        give-effect: INCREASE_DAMAGE 10 1
+        
+        
+Я расказал 50% всех зданий, но остались функции для if-completed
+
+выдача эффектов
+give-effect: FIRE_RESISTANCE 10 1
+
+умножитель налога
+multiplier-tax: "+10%"
+multiplier-tax: "-10%"
+
+выдача предметов
+item-stock:
+  item: DIAMOND_SWORD:1
+  seconds: 100
+
+умножитель выдача предметов
+multiplier-stock: "+10%"
+
+выдача монет, первый аргумент количество, второй аргумент кол-во секунд за выдачу монет из первого аргумента
+minting-money: 100 60
+
+Умножитель выдачи монет
+multiplier-money: "+10%"
+
+
+
+Выдача разрешений, есть несколько разрешений от Towny++
+
+страницы инвентаря
+  townyplusplus.bankinv.1
+  townyplusplus.bankinv.2
+  townyplusplus.bankinv.3
+  townyplusplus.bankinv.4
+  townyplusplus.bankinv.5
+  
+использование /t inv
+  townyplusplus.bankinv
+
+использование /tw
+  townyplusplus.wonders
+
+использование /tb
+  townyplusplus.builds
+
+
+give-permission: "townyplusplus.bankinv.1"
+give-permission: "townyplusplus.bankinv.2"
+я учел два страницы чтобы у игроков не было багов при использовании двух страницы
