@@ -118,13 +118,26 @@ multiplier-money: "+10%"
 
 Выдача разрешений, есть несколько разрешений от Towny++
 
+
+
+
 страницы инвентаря
   townyplusplus.bankinv.1
   townyplusplus.bankinv.2
   townyplusplus.bankinv.3
   townyplusplus.bankinv.4
   townyplusplus.bankinv.5
-  
+
+страницы хранилища (stock)
+  townyplusplus.bankstock.1
+  townyplusplus.bankstock.2
+  townyplusplus.bankstock.3
+  townyplusplus.bankstock.4
+  townyplusplus.bankstock.5
+
+использование /t stock
+  townyplusplus.bankinv
+
 использование /t inv
   townyplusplus.bankinv
 
